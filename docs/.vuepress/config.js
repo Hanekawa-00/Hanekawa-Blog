@@ -39,6 +39,7 @@ export default defineUserConfig({
           children: [
             '/blog/article1.md',
             '/blog/article2.md',
+            '/blog/article3.md',
           ],
         },
       ],
