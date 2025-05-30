@@ -1,7 +1,6 @@
 import { viteBundler } from '@vuepress/bundler-vite'
-import { defaultTheme } from '@vuepress/theme-default'
+import { hopeTheme } from 'vuepress-theme-hope'
 import { defineUserConfig } from 'vuepress'
-import { commentPlugin } from '@vuepress/plugin-comment'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -12,7 +11,7 @@ export default defineUserConfig({
 
   bundler: viteBundler(),
   
-  theme: defaultTheme({
+  theme: hopeTheme({
     // 导航栏
     navbar: [
       {
@@ -41,10 +40,6 @@ export default defineUserConfig({
           children: [
             '/blog/welcome-to-my-blog.md',
             '/blog/vuepress-setup-guide.md',
-          
-          
-          
-          
           ],
         },
       ],
@@ -55,75 +50,50 @@ export default defineUserConfig({
     
     // 最后更新时间
     lastUpdated: true,
-    lastUpdatedText: '上次更新',
 
     // 贡献者
     contributors: false,
 
-    // 页面滚动
-    smoothScroll: true,
+    // 主题配置
+    darkmode: 'toggle', // 启用深色模式切换
+    
+    // 插件配置
+    plugins: {
+      // 评论插件配置
+      comment: {
+        provider: 'Giscus',
+        repo: 'Hanekawa-00/Hanekawa-Blog',
+        repoId: 'R_kgDOOyFkEg',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOOyFkEs4CqsWQ',
+        mapping: 'pathname',
+        reactionsEnabled: true,
+        inputPosition: 'bottom',
+        lang: 'zh-CN',
+        theme: 'preferred_color_scheme',
+        lazyLoading: true,
+        crossorigin: 'anonymous',
+      },
+    },
+    
+    // Markdown 配置
+    markdown: {
+      gfm: true,
+      vPre: true,
+      tabs: true,
+      codeTabs: true,
+      align: true,
+      attrs: true,
+      sup: true,
+      sub: true,
+      footnote: true,
+      mark: true,
+      imgLazyload: true,
+      imgSize: true,
+      figure: true,
+      tasklist: true,
+    },
   }),
 
-  // 插件配置
-  plugins: [
-    // Giscus 评论系统配置
-    // 详细配置步骤：
-    // 1. 访问 https://giscus.app/zh-CN
-    // 2. 输入你的 GitHub 仓库信息（需要是公开仓库）
-    // 3. 在仓库设置中启用 Discussions 功能
-    // 4. 选择页面 ↔️ discussion 映射关系
-    // 5. 选择 Discussion 分类（推荐使用 'Announcements'）
-    // 6. 复制生成的配置信息替换下面的占位符
-    commentPlugin({
-      // 评论服务提供商，这里使用 Giscus
-      provider: 'Giscus',
-      
-      // Giscus 配置需要嵌套在 comment 对象中
-      comment: {
-        // GitHub 仓库地址，格式：用户名/仓库名
-        repo: 'Hanekawa-00/Hanekawa-Blog',
-        
-        // 仓库 ID，从 Giscus 配置页面获取
-        repoId: 'R_kgDOOyFkEg',
-        
-        // Discussion 分类名称，推荐使用 'Announcements'
-        category: 'Announcements',
-        
-        // Discussion 分类 ID，从 Giscus 配置页面获取
-        categoryId: 'DIC_kwDOOyFkEs4CqsWQ',
-        
-        // 页面 ↔️ discussion 映射关系
-        // 'pathname' - 根据页面路径映射
-        // 'url' - 根据页面 URL 映射
-        // 'title' - 根据页面标题映射
-        mapping: 'pathname',
-        
-        // 反应标签是否启用
-        reactionsEnabled: true,
-        
-        // 输入框位置
-        // 'top' - 评论框在评论上方
-        // 'bottom' - 评论框在评论下方
-        inputPosition: 'bottom',
-        
-        // 语言设置
-        lang: 'zh-CN',
-        
-        // 主题模式
-        // 'light' - 浅色主题
-        // 'dark' - 深色主题
-        // 'preferred_color_scheme' - 跟随系统主题
-        // 'transparent_dark' - 透明深色主题
-        theme: 'preferred_color_scheme',
-        
-        // 是否启用懒加载
-        lazyLoading: true,
-        
-        // 评论区域设置
-        crossorigin: 'anonymous',
-      }
-    }),
-    
-    // 搜索插件暂时移除，稍后重新配置
-  ],
+  // 插件配置已迁移到主题配置中
 })

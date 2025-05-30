@@ -14,12 +14,11 @@
   "description": "",
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.23",
-    "@vuepress/client": "^2.0.0-rc.23",
-    "@vuepress/plugin-comment": "^2.0.0-rc.106",
     "@vuepress/plugin-docsearch": "^2.0.0-rc.0",
-    "@vuepress/plugin-search": "^1.9.10",
-    "@vuepress/theme-default": "^2.0.0-rc.106",
     "sass-embedded": "^1.89.0",
     "vuepress": "^2.0.0-rc.23"
+  },
+  "dependencies": {
+    "vuepress-theme-hope": "^2.0.0-rc.89"
   }
 }
