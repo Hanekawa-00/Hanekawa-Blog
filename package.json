@@ -5,6 +5,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "update-blog": "node scripts/update-blog.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.23",
     "@vuepress/client": "^2.0.0-rc.23",
+    "@vuepress/plugin-comment": "^2.0.0-rc.106",
     "@vuepress/plugin-docsearch": "^2.0.0-rc.0",
     "@vuepress/plugin-search": "^1.9.10",
     "@vuepress/theme-default": "^2.0.0-rc.106",

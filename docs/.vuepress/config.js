@@ -32,15 +32,18 @@ export default defineUserConfig({
       },
     ],
 
-    // 侧边栏
+    // 侧边栏 - 将由自动化脚本更新
     sidebar: {
       '/blog/': [
         {
           text: '博客文章',
           children: [
-            '/blog/article1.md',
-            '/blog/article2.md',
-            '/blog/article3.md',
+            '/blog/welcome-to-my-blog.md',
+            '/blog/vuepress-setup-guide.md',
+          
+          
+          
+          
           ],
         },
       ],
