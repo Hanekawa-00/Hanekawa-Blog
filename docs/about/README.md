@@ -43,7 +43,6 @@ title: 关于我
 
 - 📧 **邮箱**：zzh.520@hotmail.com
 - 🐙 **GitHub**：[github.com/yourusername](https://github.com)
-- 🐦 **Twitter**：[@yourusername](https://twitter.com)
 
 ## 博客动机
 
