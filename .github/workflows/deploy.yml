@@ -35,6 +35,10 @@ jobs:
       - name: Build VuePress site
         run: npm run docs:build
 
+      # 添加这个步骤来创建CNAME文件
+      - name: Create CNAME file
+        run: echo 'hanekawa.icu' > docs/.vuepress/dist/CNAME
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
