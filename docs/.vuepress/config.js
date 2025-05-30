@@ -39,7 +39,9 @@ export default defineUserConfig({
         {
           text: '博客文章',
           children: [
-            // 文章列表将由 npm run update-blog 自动生成
+            '/blog/welcome.md',
+          
+          
 
           ],
         },

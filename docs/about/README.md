@@ -19,7 +19,7 @@ title: 关于我
 - Webpack/Vite
 
 ### 后端技术
-- Node.js
+- Spring Boot
 - Python
 - 数据库设计
 - API开发
@@ -41,7 +41,7 @@ title: 关于我
 
 如果你想与我交流，可以通过以下方式联系我：
 
-- 📧 **邮箱**：your-email@example.com
+- 📧 **邮箱**：zzh.520@hotmail.com
 - 🐙 **GitHub**：[github.com/yourusername](https://github.com)
 - 🐦 **Twitter**：[@yourusername](https://twitter.com)
 
