@@ -6,11 +6,12 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: '我的个人博客',
   description: '记录技术学习与生活感悟',
- // base: '/Hanekawa-Blog/',
+  // base: '/Hanekawa-Blog/',
+  // 自定义域名需要更改根目录
   base: '/',
 
   bundler: viteBundler(),
-  
+
   theme: hopeTheme({
     // 导航栏
     navbar: [
@@ -38,8 +39,8 @@ export default defineUserConfig({
         {
           text: '博客文章',
           children: [
-            '/blog/welcome-to-my-blog.md',
-            '/blog/vuepress-setup-guide.md',
+            // 文章列表将由 npm run update-blog 自动生成
+
           ],
         },
       ],
@@ -47,7 +48,7 @@ export default defineUserConfig({
 
     // 页面编辑链接
     editLink: false,
-    
+
     // 最后更新时间
     lastUpdated: true,
 
@@ -56,7 +57,7 @@ export default defineUserConfig({
 
     // 主题配置
     darkmode: 'toggle', // 启用深色模式切换
-    
+
     // 插件配置
     plugins: {
       // 评论插件配置
@@ -75,7 +76,7 @@ export default defineUserConfig({
         crossorigin: 'anonymous',
       },
     },
-    
+
     // Markdown 配置
     markdown: {
       gfm: true,
