@@ -12,15 +12,20 @@ actions:
     link: /about/
     type: secondary
 features:
-  - title: 简洁至上
-    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-  - title: Vue驱动
-    details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-  - title: 高性能
-    details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+  - title: 专注写作
+    details: 记录技术学习的点点滴滴，用文字留下思考的足迹，让每一次的探索都成为成长的见证。
+  - title: 知识分享
+    details: 分享编程经验、开发心得和解决问题的思路，希望我的经历能为其他开发者提供一些帮助和启发。
+  - title: 技术探索
+    details: 保持对新技术的好奇心，不断学习前沿知识，在技术的海洋中持续航行，记录每一次的发现与感悟。
 footer: MIT Licensed | Copyright © 2025-present
 ---
 
-# 最新文章
+<!-- 最新文章开始 -->
+## 📝 最新文章
 
-这里将展示最新的博客文章...
+- [欢迎来到我的技术博客](/blog/welcome.md) - 2025/05/30
+  
+  *这个博客是我记录技术学习历程、分享编程经验和生活感悟的地方。无论您是初学者还是经验丰富的开发者，都希望能在这里找到有价值的内容。 - 前端技术：Vue.js、R...*
+
+<!-- 最新文章结束 -->

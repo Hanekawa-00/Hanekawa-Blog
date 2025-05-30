@@ -103,8 +103,7 @@ def welcome():
 欢迎与我交流技术话题和博客内容：
 
 ::: info 联系我
-- **GitHub**：[访问我的 GitHub](https://github.com)
-- **邮箱**：通过 GitHub 联系我
+- **邮箱**：zzh.520@hotmail.com
 - **评论区**：在任何文章下留言讨论
 :::
 
