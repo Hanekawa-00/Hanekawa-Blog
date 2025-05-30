@@ -1,1 +1,1 @@
-# 基于Vue-Press构建的博客站点
+# 基于vuepress-theme-hope构建的博客站点
