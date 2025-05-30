@@ -6,7 +6,8 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: '我的个人博客',
   description: '记录技术学习与生活感悟',
-  base: '/Hanekawa-Blog/',
+ // base: '/Hanekawa-Blog/',
+  base: '/',
 
   bundler: viteBundler(),
   
