@@ -2,7 +2,7 @@
 title: 欢迎来到我的技术博客
 date: 2025-05-30
 category:
-  - 博客
+  - 介绍
 tag:
   - 欢迎
   - VuePress

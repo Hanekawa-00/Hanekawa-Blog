@@ -37,9 +37,23 @@ export default defineUserConfig({
     sidebar: {
       '/blog/': [
         {
-          text: '博客文章',
+          text: '博客',
           children: [
             '/blog/welcome.md',
+          
+          
+          
+          
+          
+          
+
+          ],
+        },
+        {
+          text: '日语',
+          children: [
+            '/blog/日本企業の面接.md',
+          
           
           
           
@@ -65,6 +79,27 @@ export default defineUserConfig({
 
     // 插件配置
     plugins: {
+      // 启用搜索插件 - 使用新的 slimsearch
+      slimsearch: {
+        // 索引全部内容
+        indexContent: true,
+        // 搜索热键
+        hotKeys: [{ key: "k", ctrl: true }, { key: "s", ctrl: true }],
+        // 搜索建议数量
+        suggestionsCount: 5,
+        // 自定义字段
+        customFields: [
+          {
+            getter: ({ frontmatter }) => frontmatter.category,
+            formatter: "分类：$content",
+          },
+          {
+            getter: ({ frontmatter }) => frontmatter.tag,
+            formatter: "标签：$content",
+          },
+        ],
+      },
+
       // 评论插件配置
       comment: {
         provider: 'Giscus',
