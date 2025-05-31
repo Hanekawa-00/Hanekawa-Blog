@@ -14,6 +14,7 @@
   "description": "",
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.23",
+    "@vuepress/plugin-search": "^2.0.0-rc.23",
     "sass-embedded": "^1.89.0",
     "vuepress": "^2.0.0-rc.23"
   },

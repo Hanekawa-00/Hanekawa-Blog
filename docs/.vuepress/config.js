@@ -79,6 +79,19 @@ export default defineUserConfig({
 
     // 插件配置
     plugins: {
+      // 搜索插件配置
+      search: {
+        // 配置项
+        isSearchable: (page) => page.path !== '/',
+        maxSuggestions: 10,
+        hotKeys: ['s', '/'],
+        locales: {
+          '/': {
+            placeholder: '搜索文档',
+          },
+        },
+      },
+
       // 评论插件配置
       comment: {
         provider: 'Giscus',
